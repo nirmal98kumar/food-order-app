@@ -188,7 +188,44 @@ export class CommonService {
             quantity:1
           },
         ]
-    }
+    },
+    {
+        order_no:5,
+          order_time:"03.30 PM",
+          order_date:"11-02-2022",
+          total:500,
+          items:[
+            {
+              name: "Chicken Tandoori",
+              type: "Non-Veg",
+              cuisine: "Arabian",
+              price: 250,
+              quantity:1
+            },
+            {
+              name: "Grilled Chicken",
+              type: "Non-Veg",
+              cuisine: "Arabian",
+              price: 250,
+              quantity:1
+            },
+          ]
+    },
+    {
+      order_no:6,
+        order_time:"03.30 PM",
+        order_date:"10-02-2022",
+        total:250,
+        items:[
+          {
+            name: "Grilled Chicken",
+            type: "Non-Veg",
+            cuisine: "Arabian",
+            price: 250,
+            quantity:1
+          },
+        ]
+  }
   ]
 
 }

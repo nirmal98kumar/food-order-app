@@ -99,7 +99,10 @@ export class OrderComponent implements AfterViewInit, OnInit {
 
   freqOrderFilter(event): void {
     if(event.checked){
-      this.filterFrequentOrderItem()
+      this.clearFilter()
+      setTimeout(()=>{
+        this.filterFrequentOrderItem()
+      },1000)
     }
     else{
       this.clearFilter()
