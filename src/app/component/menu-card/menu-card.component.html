@@ -1,0 +1,27 @@
+<div fxLayout="row wrap" fxLayoutGap="18px grid" class="card-div">
+  <div fxFlex="24%" *ngFor="let item of menuList">
+    <mat-card class="menu-card mat-elevation-z">
+      <img mat-card-image src="{{item.img}}" style="height: 40%;">
+      <mat-card-content style="height: 37%;">
+        <div style="display:flex;margin: 10px 5px 10px 5px;">
+          <mat-card-title style="font-size:25px !important;font-weight: 600;width:75%;">{{item.name}}</mat-card-title>
+          <mat-card-subtitle class="type" [ngClass]="{'veg':item.type=='Veg','nonveg':item.type=='Non-Veg'}">{{item.type}}</mat-card-subtitle>
+        </div>
+        <mat-card-subtitle style="margin-left: 5px;font-weight: 600;font-family: unset;">{{item.cuisine}}</mat-card-subtitle>
+        <mat-card-subtitle style="font-size: small;margin-bottom:2px;margin-left:5px;font-weight: bold;color: #332967;">Availabile At</mat-card-subtitle>
+        <div style="display: flex;margin-left:5px;">
+        <ng-container *ngFor="let time of item.availability;let i = index;">
+          <mat-card-subtitle style="margin-top:0;font-size: small;">{{time}}</mat-card-subtitle>
+          <ng-container *ngIf="(i!= (item.availability.length-1)) && (item.availability.length>1)">
+            <p style="margin-top:0">&nbsp;/&nbsp; </p>
+          </ng-container>
+        </ng-container>
+      </div>
+      </mat-card-content>
+      <div>
+        <input matInput type="number" class="qty-input" placeholder="0" min="1" [(ngModel)]="item.quantity">
+        <button mat-raised-button (click)="addItemToCart(item)" class="add-cart-btn">Add To Cart</button>
+      </div>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="menu-page">
+  <div>
+    <button md-fab class="cart-btn image" (click)="sidenav.toggle()"><img src="../../../assets/img/cart.svg"
+      class="btn-img"></button>
+  </div>
+  <mat-sidenav-container>
+    <mat-sidenav-content>
+      <app-menu-card></app-menu-card>
+    </mat-sidenav-content>
+    <mat-sidenav #sidenav mode="side" position="end" class="sidenav">
+      <app-cart></app-cart>
+    </mat-sidenav>
+  </mat-sidenav-container>
+</div>

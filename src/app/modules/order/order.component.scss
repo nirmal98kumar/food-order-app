@@ -1,0 +1,87 @@
+table {
+    width: 100%;
+  }
+
+
+.mat-column-order_no {
+    width:15%;
+}
+
+.mat-column-order_date {
+    width:20%;
+}
+
+.mat-column-items {
+    width:50%;
+}
+
+.item-div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0
+}
+
+th.mat-sort-header-sorted {
+    color: black;
+  }
+
+.search-bar
+{
+        width:85%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-bottom: 0px;
+        .mat-form-field-infix {
+            padding: 16px 0 15px 0 !important;
+         }
+        
+}
+
+mat-form-field{
+    mat-form-field-wrapper{
+        mat-form-field-flex{
+            mat-form-field-infix {
+                padding: 16px 0 15px 0 !important;
+             }
+        }
+    }
+}
+
+
+::ng-deep mat-form-field-wrapper{
+   padding-bottom: 0px !important;
+}
+
+
+
+.search-div{
+    justify-content: center;
+    display: flex;
+}
+
+.filter-div{
+ 
+}
+
+.type-filter{
+    width: 25%;
+    margin: 0 20px;
+}
+
+.cuisine-filter{
+    width: 25%;
+    margin: 0 20px;
+}
+
+.mat-form-field .search-bar {
+    padding: 16px 0 15px 0 !important;
+    .mat-form-field-infix {
+        width: 100%;
+    }
+}
+
+th.mat-header-cell {
+    color: white;
+    background-color: #673ab7;
+  }
+  

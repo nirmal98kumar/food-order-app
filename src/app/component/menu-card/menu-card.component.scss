@@ -1,0 +1,51 @@
+.content {
+    padding: 16px;
+}
+
+.menu-card {
+    height: 345px;
+    box-shadow: 0 2px 1px -1px black, 0 1px 1px 0 black, 0 1px 3px 0 black;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  
+  .mat-card-image{
+    margin:0 !important;
+    width: 100%;
+  }
+  
+  .qty-input{
+    width: 17%;
+    height: 25px;
+    margin: 2% 2% 2% 12%;
+  }
+
+  .card-div{
+    padding-top:3px;
+    padding-left:3px;
+    padding-right: 16px;
+  }
+
+  .type{
+    margin-top: 7px !important;
+    margin-bottom: 0px;
+    margin-left: 10%;
+    font-family: monospace;
+    color: mediumseagreen;
+    font-weight: 900;
+    width:75%;
+    &.nonveg{
+      color:red;
+    }
+  }
+
+  .add-cart-btn{
+    color: white;
+    background-color: #d33939;
+    font-size: small;
+    margin-left: 9%;
+    float:right;
+  }
